@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Haven</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" target="_blank" width="50%" height="50%"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contraceptives.html">CONTRACEPTIVES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+    </section>
+
+<!----Contraceptives---->
+
+    <section class="contraceptives">
+        <h1>Popular Contraceptives</h1>
+        <p>Contraceptives are methods or devices that are used to prevent pregnancy. Click on a contraceptive to learn more.</p>
+        <div class="contraceptive-cards">
+            <div class="card" onclick="showDetails('iud')">
+                <img src="images/copper.png" alt="Intrauterine Device">
+                <h3>Intrauterine Device (IUD)</h3>
+            </div>
+            <div class="card" onclick="showDetails('oral')">
+                <img src="images/pills.png" alt="Oral Contraceptives">
+                <h3>Oral Contraceptives</h3>
+            </div>
+            <div class="card" onclick="showDetails('ring')">
+                <img src="images/ring.png" alt="Vaginal Ring">
+                <h3>Vaginal Ring</h3>
+            </div>
+            <div class="card" onclick="showDetails('diaphragm')">
+                <img src="images/Diaphragm.png" alt="Diaphragm">
+                <h3>Diaphragm</h3>
+            </div>
+            <div class="card" onclick="showDetails('implant')">
+                <img src="images/implant.png" alt="Contraceptive Implant">
+                <h3>Contraceptive Implant</h3>
+            </div>
+            <div class="card" onclick="showDetails('condom')">
+                <img src="images/condom.png" alt="Condoms">
+                <h3>Condoms</h3>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div id="contraceptive-details" class="details">
+            <div class="details-content">
+                <div class="details-text">
+                    <h2 id="details-title"></h2> <!-- Title above the text -->
+                    <p id="details-content"></p>
+                    <button onclick="hideDetails()">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!----Side Effects---->
+
+    <section class="side-effects">
+        <h1>Possible Side Effects</h1>
+        <p>While contraceptives are effective in preventing pregnancy, some individuals may experience side effects. Click on a side effect to learn more.</p>
+        <div class="side-effects-table">
+            <div class="side-effects-list">
+                <ul>
+                    <li onclick="showSideEffect('headaches')">Headaches</li>
+                    <li onclick="showSideEffect('soreThroat')">Sore Throat</li>
+                    <li onclick="showSideEffect('vaginitis')">Vaginitis</li>
+                    <li onclick="showSideEffect('weightGain')">Weight Gain</li>
+                    <li onclick="showSideEffect('acne')">Acne</li>
+                    <li onclick="showSideEffect('abdominalPain')">Abdominal Pain</li>
+                    <li onclick="showSideEffect('breastPain')">Breast Pain</li>
+                    <li onclick="showSideEffect('irregularBleeding')">Irregular Bleeding</li>
+                </ul>
+            </div>
+            <div class="side-effects-description">
+                <h2 id="effect-title">Select a Side Effect</h2>
+                <p id="effect-description">Click on a side effect from the list to see its description here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----footer---->
+
+    <section class="footer">
+        <h4>Contraceptives</h4>
+        <p>We believe every woman deserves control over their own body and future. Thats why we are dedicated to providing a safe supportive and empowering online space where people can access the contraceptives, information and resources they need to make informed choices about their reproductive health.</p>
+        <div class="icons">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i>
+            <i class="fab fa-instagram fa-2x" style="color: #E4405F;"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by
+            Cool Geeks</p>
+    </section>
+<script src="js/script.js"></script>
+</body>
+</html>
